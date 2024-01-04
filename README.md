@@ -13,11 +13,11 @@ Generation of a .pdf-document can be archived with compiling expose.tex (in Over
 Attention: For connecting GitHub with Overleaf, a premium Overleaf membership is necessary. Here is a short description on how to bypass this problem:
 
 
-1. Sign in or register in Overleaf.com
+1. Sign in or register at [Overleaf](https://overleaf.com)
 2. Download/clone the repo
 3. Zip the "overleaf_template_hsh" folder
 4. Click the green *New Project* button in Overleaf and hit the *Upload Project* button in the dropdown menu to the left
-5. Drag you overleaf_template_hsh.zip folder in there and hit the *Compie* button within expose.tex afterwards
+5. Drag you overleaf_template_hsh.zip folder in there and hit the *Compile* button within expose.tex afterwards
 6. Have fun!
    
 ---
