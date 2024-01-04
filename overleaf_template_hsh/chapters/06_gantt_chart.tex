@@ -1,0 +1,46 @@
+
+
+\begin{ganttchart}[
+    vgrid,
+    hgrid,
+    x unit=1.2cm,
+    y unit title=0.7cm,
+    y unit chart=0.5cm,
+    title height=1,
+    milestone left shift=.1,
+    milestone right shift=-.1,
+    group left shift=0,
+    group right shift=0,
+    group peaks tip position=0,
+    group peaks height=0.2,
+    title label font=\small,
+    bar label font=\footnotesize,
+    group label font=\footnotesize\bfseries,
+    milestone label font=\footnotesize\itshape,
+    milestone/.append style={fill=black, rounded corners=2pt},
+    bar/.append style={fill=black!50},
+    group/.append style={draw=black, fill=black!30},
+  ]{1}{9}
+
+  % adapt the "9" to change the amount of weeks
+  \gantttitle[]{Thesis timeline [weeks]}{9} \\
+  \gantttitlelist{1,...,9}{1} \\
+
+  \ganttgroup{Writing Intro}{1}{3} \\
+  \ganttbar{Step 2}{1}{1} \\
+  \ganttbar{Step 3}{2}{3} \\
+  \ganttmilestone{Initial check}{3} \\
+
+  \ganttgroup{Writing methods}{5}{7} \\
+  \ganttbar{Step ...}{3}{5} \\
+  \ganttbar{Step ...}{4}{4} \\
+  \ganttbar{Step ...}{3}{5} \\
+  \ganttbar{Step ...}{5}{7} \\
+  \ganttmilestone{Milestone 2}{7} \\
+
+  \ganttgroup{...}{7}{9} \\
+  \ganttmilestone{Deadline}{9}
+\end{ganttchart}
+
+% Create a new page to end this chapter
+\newpage

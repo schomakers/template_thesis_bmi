@@ -1,0 +1,45 @@
+
+\usepackage{pgfgantt}
+
+
+\begin{ganttchart}[
+    vgrid,
+    hgrid,
+    x unit=1.2cm,
+    y unit title=0.7cm,
+    y unit chart=0.5cm,
+    title height=1,
+    milestone left shift=.1,
+    milestone right shift=-.1,
+    group left shift=0,
+    group right shift=0,
+    group peaks tip position=0,
+    group peaks height=0.2,
+    title label font=\small,
+    bar label font=\footnotesize,
+    group label font=\footnotesize\bfseries,
+    milestone label font=\footnotesize\itshape,
+    milestone/.append style={fill=black, rounded corners=2pt},
+    bar/.append style={fill=black!50},
+    group/.append style={draw=black, fill=black!30},
+  ]{1}{9}
+    
+  \gantttitle[]{Thesis timeline [weeks]}{9} \\
+  \gantttitlelist{1,...,9}{1} \\
+
+  \ganttgroup{Organisation}{1}{3} \\
+  \ganttbar{Setup}{1}{1} \\
+  \ganttbar{Fundamentals writing}{1}{3} \\
+  \ganttmilestone{Initial check}{3} \\
+
+  \ganttgroup{Methodology}{3}{7} \\
+  \ganttbar{Literature analysis: Automated annotation via ML}{3}{5} \\
+  \ganttbar{Description H4A-study}{3}{4} \\
+  \ganttbar{Description MaD-GUI}{4}{5} \\
+  \ganttbar{Implementation}{5}{7} \\
+  \ganttmilestone{Second check}{7} \\
+
+  \ganttgroup{Results}{7}{9} \\
+  \ganttmilestone{Deadline}{9}
+\end{ganttchart}
+

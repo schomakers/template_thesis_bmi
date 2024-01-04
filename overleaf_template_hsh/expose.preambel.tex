@@ -1,0 +1,63 @@
+% Preamble file with all the settings which are necessary for the layout.
+% Be careful changing things here and always compile the expose.tex 
+% No worries, if the compiling of the preamble doesn't work
+
+\documentclass[12pt, oneside, paper=A4, DIV=15, UKenglish]{scrreprt}
+\usepackage[UKenglish]{babel}
+\usepackage[utf8]{inputenc}
+
+% Schriftart
+%\usepackage{arev}
+%\usepackage[T1]{fontenc}
+
+
+% Font
+\usepackage{libertine}
+\usepackage{libertinust1math}
+\usepackage[T1]{fontenc}
+
+
+% Math, Symbols, Unit representation, Chemistry
+\usepackage{siunitx}
+
+% Typography
+\usepackage[auto]{microtype}
+
+% Author information
+\usepackage[UKenglish]{authblk}
+\renewcommand\Authand{, }
+\renewcommand\Authands{, }
+
+% Gantt-Chart in Outline
+\usepackage{pgfgantt}
+
+% Enumitem for better list formatting in 4 questions
+\usepackage{enumitem}
+
+% Bibliography nach Vancouver
+% Vancouver: https://www.imperial.ac.uk/media/imperial-college/administration-and-support-services/library/public/LaTeX-example-Vancouver-apr-2019.pdf
+
+% \usepackage{csquotes}
+\usepackage[square,numbers]{natbib}
+
+
+%Includes "References" in the table of contents
+\usepackage[nottoc]{tocbibind}
+
+
+% Page margins
+\usepackage[left=3cm, right=2cm, top=2.5cm, bottom=2.5cm]{geometry}
+
+% Line spacing
+\usepackage{setspace}
+\onehalfspacing
+
+% Hyperref (pdf-settings) settings
+% hidelinks arg for not framing links!
+\usepackage[
+  pdftitle={Title},
+  pdfsubject={hmIMU activity recognition},
+  pdfauthor={A. Schomakers},
+  pdfkeywords={Your Keywords},
+  hidelinks
+]{hyperref}

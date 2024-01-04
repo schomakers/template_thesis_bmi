@@ -1,0 +1,50 @@
+
+% -----------------------------------------------------
+%           Expose/Thesis template 
+%           made by Andre Schomakers
+% for Hannover University of Applied Sciences (BMI/MMI)
+%           4th of January 2024
+% -----------------------------------------------------
+
+
+% Praeambel before the actual chapter start:
+% -----------------------------------------------
+
+\include{expose.preambel}
+
+
+\begin{document}
+
+% -----------------------------------------------
+
+% Actual thesis starts here and compiles all files together. Run this document in Overleaf.com to compile thesis.
+
+\input{title_page}
+
+\tableofcontents
+\newpage
+
+\chapter{Background and motivation}
+\input{chapters/01_motivation}
+
+\chapter{Research problems}
+\input{chapters/02_problems}
+
+{\let\clearpage\relax\chapter{Aim of this research}}
+\input{chapters/03_goals}
+
+\chapter{Research questions}
+\input{chapters/04_researchquest}
+
+\chapter{Methodology}
+\input{chapters/05_methodology}
+
+\chapter{Timetable}
+\input{chapters/06_gantt_chart}
+
+\chapter{Table of Contents}
+\input{chapters/07_outline}
+
+\input{chapters/08_biblio}
+
+\end{document}
